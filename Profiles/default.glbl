@@ -9,4 +9,9 @@
       <initValue>'http://127.0.0.1:8000/registration'</initValue>
       <name>REGISTER_URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://127.0.0.1:8000/login'</initValue>
+      <name>URL_LOGIN</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
