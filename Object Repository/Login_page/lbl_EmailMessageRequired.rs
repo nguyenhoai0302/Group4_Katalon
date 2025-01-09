@@ -6,12 +6,11 @@
    <elementGuidId>bc19d7b4-28a0-42eb-b91c-87ce3ef97f64</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;mb-3&quot;]/input[@id=&quot;email&quot;]/following-sibling::span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//label[normalize-space()='Email Address']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

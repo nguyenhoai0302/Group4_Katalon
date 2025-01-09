@@ -6,12 +6,11 @@
    <elementGuidId>5dfda92c-1ebb-42e4-ad98-680157cf0b1d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;mb-3&quot;]/input[@id=&quot;password&quot;]/following-sibling::span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//strong[normalize-space()='The password field is required.']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
