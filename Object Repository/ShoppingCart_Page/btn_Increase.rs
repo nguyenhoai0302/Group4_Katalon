@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_DetailProduct</name>
+   <name>btn_Increase</name>
    <tag></tag>
-   <elementGuidId>a3338cbc-22ec-4a5d-977d-98038a54ea6a</elementGuidId>
+   <elementGuidId>31a5e20f-a97a-4673-9bb1-7026329bddbc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@href=&quot;http://127.0.0.1:8000/get-detail/1&quot;]</value>
+         <value>//span[@class=&quot;ir&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

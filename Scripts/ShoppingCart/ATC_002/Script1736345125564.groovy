@@ -17,3 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Call test case LoginTest trong PurchaseTest'
+WebUI.callTestCase(findTestCase('Test Cases/Login/TC001_LoginSuccessfullyWithValidAccount'), [:], FailureHandling.STOP_ON_FAILURE)
+
+'Click product to see details'
+WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'))
+
+'Verify that the message "Soft Pinch Liquid Blush Vana 123" text is displayed'
+WebUI.verifyTextPresent('Soft Pinch Liquid Blush Vana 123', false)
+
+'Increase the number of products by 2'
+WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_Increase'))
+
+'Click "Add to cart" button'
+WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_AddToCart'))
+
+'The message "The product has been added to the cart." is displayed'
+WebUI.verifyTextPresent('The product has been added to the cart.', false)
+
+'Close browser'
+WebUI.closeBrowser()

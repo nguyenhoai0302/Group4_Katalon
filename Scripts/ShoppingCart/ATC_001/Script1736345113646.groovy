@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Test Cases/Login/TC001_LoginSuccessfullyWithValidAccount'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click product to see details'
-WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_detailProduct'))
+WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'))
 
 'Verify that the message "Soft Pinch Liquid Blush Vana 123" text is displayed'
 WebUI.verifyTextPresent('Soft Pinch Liquid Blush Vana 123', false)
@@ -29,8 +29,8 @@ WebUI.verifyTextPresent('Soft Pinch Liquid Blush Vana 123', false)
 'Click "Add to cart" button'
 WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_AddToCart'))
 
-'The message "The product has been added to cart" is displayed'
-WebUI.verifyTextPresent('The product has been added to cart', false)
+'The message "The product has been added to the cart." is displayed'
+WebUI.verifyTextPresent('The product has been added to the cart.', false)
 
 'Close browser'
 WebUI.closeBrowser()
