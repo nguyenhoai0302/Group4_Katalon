@@ -22,8 +22,8 @@ WebUI.callTestCase(findTestCase('Test Cases/Login/TC001_LoginSuccessfullyWithVal
 
 'List of products to add to cart'
 def products = [
-    [name: 'Sculpt Cream Contour Stick', detailObject: 'Object Repository/ShoppingCart_Page/lnk_DetailProduct4', quantity: '1'],
-    [name: 'Backstage Face & Body Foundation', detailObject: 'Object Repository/ShoppingCart_Page/lnk_DetailProduct5', quantity: '1']
+    [name: 'Sculpt Cream Contour Stick', detailObject: 'Object Repository/ShoppingCart_Page/lnk_DetailProduct4'],
+    [name: 'Backstage Face & Body Foundation', detailObject: 'Object Repository/ShoppingCart_Page/lnk_DetailProduct5']
 ]
 
 'Loop through each product in the list'
