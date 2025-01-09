@@ -14,4 +14,9 @@
       <initValue>'http://127.0.0.1:8000/login'</initValue>
       <name>URL_LOGIN</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://127.0.0.1:8000/get-detail/1'</initValue>
+      <name>URL_ADDPRODUCT</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
