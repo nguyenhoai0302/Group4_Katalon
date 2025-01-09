@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_Increase'))
 'Click "Add to cart" button'
 WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_AddToCart'))
 
-'The message "The product has been added to the cart." is displayed'
+'Verify that the message "The product has been added to the cart." is displayed'
 WebUI.verifyTextPresent('The product has been added to the cart.', false)
 
 'Close browser'
