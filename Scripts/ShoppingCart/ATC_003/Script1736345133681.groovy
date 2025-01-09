@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_MyCart'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/ShoppingCart_Page/tbl_ShoppingCart'))
 
 'Verify the updated quantity of the product in the shopping cart'
-WebUI.verifyElementText(findTestObject('Object Repository/ShoppingCart_Page/input_ProductQuantity'), '1')
+WebUI.verifyElementText(findTestObject('Object Repository/ShoppingCart_Page/input_ProductQuantity3'), '1')
 
 'Close browser'
 WebUI.closeBrowser()
