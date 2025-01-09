@@ -35,5 +35,14 @@ WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_AddToCart'))
 'Verify that the message "The product has been added to cart." is displayed'
 WebUI.verifyTextPresent('The product has been added to cart.', false)
 
+'Click on "My cart" link to display the shopping cart'
+WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_MyCart'))
+
+'Verify that the shopping cart page is displayed'
+WebUI.verifyElementVisible(findTestObject('Object Repository/ShoppingCart_Page/tbl_ShoppingCart'))
+
+'Verify the updated quantity of the product in the shopping cart'
+WebUI.verifyElementText(findTestObject('Object Repository/ShoppingCart_Page/input_ProductQuantity2'), '3')
+
 'Close browser'
 WebUI.closeBrowser()
