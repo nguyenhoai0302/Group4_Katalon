@@ -44,7 +44,7 @@ WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_MyCart'))
 'Verify that the shopping cart page is displayed'
 WebUI.verifyElementVisible(findTestObject('Object Repository/ShoppingCart_Page/tbl_ShoppingCart'))
 
-'Verify the updated quantity of the product in the shopping cart'
+'Verify the price of product is equal price at in product detail'
 WebUI.verifyElementText(findTestObject('Object Repository/ShoppingCart_Page/input_ProductPrice'), '1.000.000 ₫')
 
 'Close browser'
