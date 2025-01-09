@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>DataDrivenTestSuite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>782e11f6-89c0-41d9-8740-1eee9c86dbd2</testSuiteGuid>
+   <testCaseLink>
+      <guid>4de7f381-c69c-4bee-9c3a-bcfcdf2f5c21</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Register/TC001_VerifyRegisterFunction</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c530e1b1-dd23-451b-aaa4-7a2dfd7699e0</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/RegistrationData/RegistrationData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>c530e1b1-dd23-451b-aaa4-7a2dfd7699e0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>c5662a72-8135-4e50-bb06-8e542bf0ebd7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c530e1b1-dd23-451b-aaa4-7a2dfd7699e0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Email</value>
+         <variableId>fea90094-ed07-4e98-8179-255fb5dcd796</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c530e1b1-dd23-451b-aaa4-7a2dfd7699e0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Phone</value>
+         <variableId>be474ddc-4266-4796-8f1f-3b66855b014b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c530e1b1-dd23-451b-aaa4-7a2dfd7699e0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Address</value>
+         <variableId>cef2daee-e13e-4a17-a92e-5b6dfa80d48f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c530e1b1-dd23-451b-aaa4-7a2dfd7699e0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>01534464-1c24-41c2-b9a4-5ecdb63a280f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c530e1b1-dd23-451b-aaa4-7a2dfd7699e0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ConfirmPassword</value>
+         <variableId>f3f15167-05c0-4a06-abec-e125da171941</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

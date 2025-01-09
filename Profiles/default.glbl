@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://127.0.0.1:8000/registration'</initValue>
+      <name>REGISTER_URL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
