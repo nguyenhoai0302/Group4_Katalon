@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@href=&quot;http://127.0.0.1:8000/cart-remove/2&quot;]</value>
+         <value>//a[@href=&quot;http://127.0.0.1:8000/cart-remove/1&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
