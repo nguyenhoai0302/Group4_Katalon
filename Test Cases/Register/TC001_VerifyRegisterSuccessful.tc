@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC001_VerifyRegisterSuccessful</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>81c1040a-40c3-4ed2-b84d-daf2d127639f</testCaseGuid>
-</TestCaseEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lbl_EmailMessageRequired</name>
+   <name>lbl_MessageName</name>
    <tag></tag>
-   <elementGuidId>bc19d7b4-28a0-42eb-b91c-87ce3ef97f64</elementGuidId>
+   <elementGuidId>e4c13c33-3f86-44b4-85d3-0f5599666001</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;mb-3&quot;]/input[@id=&quot;email&quot;]/following-sibling::span</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;message-username&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
