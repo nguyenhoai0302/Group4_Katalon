@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_Products'))
 'Click on the "Products" button'
 WebUI.verifyTextPresent('All products', false)
 	
-'Click product to see details'
+'Click on the product "Positive Light Silky Touch Highlighter" to see details'
 WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct3'))
 
 'Verify that the message "Positive Light Silky Touch Highlighter" text is displayed'
