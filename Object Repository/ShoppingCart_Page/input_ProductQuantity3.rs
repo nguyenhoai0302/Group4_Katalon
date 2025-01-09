@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_ProductQuantity</name>
+   <name>input_ProductQuantity3</name>
    <tag></tag>
    <elementGuidId>d918cfac-93cb-41de-bc02-400e87379967</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
