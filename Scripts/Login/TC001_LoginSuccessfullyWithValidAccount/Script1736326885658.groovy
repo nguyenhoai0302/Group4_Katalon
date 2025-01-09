@@ -41,5 +41,5 @@ WebUI.verifyEqual(currentPage , 'http://127.0.0.1:8000/', FailureHandling.CONTIN
 WebUI.click( findTestObject('Object Repository/Login_page/btn_OK'), FailureHandling.CONTINUE_ON_FAILURE)
 
 // Click the log out button
-WebUI.click(findTestObject('Object Repository/Login_page/mnu_Toggle') , FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.click(findTestObject('Object Repository/Login_page/btn_LogOut') , FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.click(findTestObject('Object Repository/Login_page/mnu_Toggle') , FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.click(findTestObject('Object Repository/Login_page/btn_LogOut') , FailureHandling.CONTINUE_ON_FAILURE)
