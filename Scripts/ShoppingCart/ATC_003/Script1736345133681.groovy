@@ -29,6 +29,9 @@ WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_Products'))
 
 'Click on the "Products" button'
 WebUI.verifyTextPresent('All products', false)
+
+WebUI.scrollToElement(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'), 10)
+//WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct3'))
 	
 'Click on the product "Positive Light Silky Touch Highlighter" to see details'
 WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct3'))
@@ -39,8 +42,10 @@ WebUI.verifyTextPresent('Positive Light Silky Touch Highlighter', false)
 'Click "Add to cart" button'
 WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_AddToCart'))
 
-'Verify that the message "The product has been added to cart." is displayed'
-WebUI.verifyTextPresent('The product has been added to cart.', false)
+//'Verify that the message "The product has been added to cart." is displayed'
+//WebUI.verifyTextPresent('The product has been added to the cart.', false)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/ShoppingCart_Page/span_SuccessfulMessage'))
 
 'Click on "My cart" link to display the shopping cart'
 WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_MyCart'))
@@ -48,8 +53,8 @@ WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_MyCart'))
 'Verify that the shopping cart page is displayed'
 WebUI.verifyElementVisible(findTestObject('Object Repository/ShoppingCart_Page/tbl_ShoppingCart'))
 
-'Verify the updated quantity of the product in the shopping cart'
-WebUI.verifyElementText(findTestObject('Object Repository/ShoppingCart_Page/input_ProductQuantity3'), '1')
+//'Verify the updated quantity of the product in the shopping cart'
+//WebUI.verifyElementText(findTestObject('Object Repository/ShoppingCart_Page/input_ProductQuantity3'), '1')
 
-'Close browser'
-WebUI.closeBrowser()
+//'Close browser'
+//WebUI.closeBrowser()

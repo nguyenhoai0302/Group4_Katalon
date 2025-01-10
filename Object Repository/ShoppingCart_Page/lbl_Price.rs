@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_DetailProduct</name>
+   <name>lbl_Price</name>
    <tag></tag>
-   <elementGuidId>a3338cbc-22ec-4a5d-977d-98038a54ea6a</elementGuidId>
+   <elementGuidId>a72ca639-14a4-4d85-95c1-344bae317b25</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@href=&quot;http://127.0.0.1:8000/get-detail/2&quot;]</value>
+         <value>//span[@class='cart-sub-total-price']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

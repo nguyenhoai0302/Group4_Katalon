@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003_VerifyCheckoutSuccessful</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b8493957-b91a-4a17-85fc-7a257c16b0ea</testCaseGuid>
+</TestCaseEntity>

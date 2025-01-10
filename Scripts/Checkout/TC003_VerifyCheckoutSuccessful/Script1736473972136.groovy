@@ -17,23 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Call test case LoginTest trong PurchaseTest'
-WebUI.callTestCase(findTestCase('Test Cases/Login/TC001_LoginSuccessfullyWithValidAccount'), [:], FailureHandling.STOP_ON_FAILURE)
+// Call previous test case
+WebUI.callTestCase(findTestCase('ShoppingCart/ATC_003'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'), 10)
-WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'))
+WebUI.click(findTestObject('Object Repository/Checkout_Page/btn_ProccedToCheckout'))
 
-'Click on the product "Super Serum Skin Tint SPF 40 Skincare Foundation'
-//WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'))
+// Step 1: Select a payment method (COD)
+WebUI.click(findTestObject('Object Repository/Checkout_Page/ddl_PaymentMethod'))
 
-'Verify that the message "Super Serum Skin Tint SPF 40 Skincare Foundation" text is displayed'
-WebUI.verifyTextPresent('Super Serum Skin Tint SPF 40 Skincare Foundation', false)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Checkout_Page/ddl_PaymentMethod'), 'COD', true)
 
-'Click "Add to cart" button'
-WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_AddToCart'))
+// Step 2: Click the "Place Order" button
+WebUI.click(findTestObject('Object Repository/Checkout_Page/btn_PlaceOrder'))
 
-'Verify the message "The product has been added to cart." is displayed'
-WebUI.verifyTextPresent('The product has been added to cart.', false)
+// Step 3: Verify that the system displays a "Successful transaction!" message
+WebUI.verifyElementPresent(findTestObject('Object Repository/Checkout_Page/span_SuccessfulTransaction'), 10)
 
-'Close browser'
+WebUI.verifyTextPresent('Successful transaction!', false)
+
+// Step 4: Close browser after the verification
 WebUI.closeBrowser()

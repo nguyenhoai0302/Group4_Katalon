@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Checkout_002</name>
+   <name>TC002_VerifyProductInfor</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>b8493957-b91a-4a17-85fc-7a257c16b0ea</testCaseGuid>
+   <testCaseGuid>5fc96103-62c2-418b-bfc0-0c7e3c11dfa4</testCaseGuid>
 </TestCaseEntity>

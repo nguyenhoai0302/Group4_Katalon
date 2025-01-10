@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_DetailProduct</name>
+   <name>lbl_ProductPrice</name>
    <tag></tag>
-   <elementGuidId>a3338cbc-22ec-4a5d-977d-98038a54ea6a</elementGuidId>
+   <elementGuidId>36d957ec-9fd9-41e3-b048-d3e02ee03b79</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@href=&quot;http://127.0.0.1:8000/get-detail/2&quot;]</value>
+         <value>//div[@class='row']//div[6]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

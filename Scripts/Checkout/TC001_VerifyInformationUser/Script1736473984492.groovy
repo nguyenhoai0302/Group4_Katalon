@@ -17,35 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// Step 1: Open browser and navigate to the login page
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:8000/login')
+// Call previous test case
 
-// Step 2: Login with valid user data (assuming valid session is created)
-WebUI.setText(findTestObject('Object Repository/Login_Page/txt_Email'), 'van123@gmail.com')
-WebUI.setText(findTestObject('Object Repository/Login_Page/txt_Password'), '12345')
-WebUI.click(findTestObject('Object Repository/Login_Page/btn_SignIn'))
 
 // Step 3: Navigate to the checkout page
-WebUI.navigateToUrl('http://127.0.0.1:8000/checkout')
+WebUI.click(findTestObject('Object Repository/Checkout_Page/btn_ProccedToCheckout'))
 
-// Step 4: Retrieve session data (this is pseudocode, adapt based on your framework/server)
-def sessionUsername = WebUI.executeJavaScript('return sessionStorage.getItem("username")', null)
-def sessionEmail = WebUI.executeJavaScript('return sessionStorage.getItem("email")', null)
-def sessionPhone = WebUI.executeJavaScript('return sessionStorage.getItem("phone")', null)
-def sessionAddress = WebUI.executeJavaScript('return sessionStorage.getItem("address")', null)
+// Step 4: Retrieve session details
+def sessionUsername = GlobalVariable.UserName
+def sessionEmail = GlobalVariable.Email
+def sessionPhone = GlobalVariable.Phone
+def sessionAddress = GlobalVariable.Address
 
-// Step 5: Verify that the checkout page displays the correct data from the session
+// Step 5: Get checkout page details and verify them
 String displayedUsername = WebUI.getAttribute(findTestObject('Object Repository/Checkout_Page/txt_Username'), 'value')
 String displayedEmail = WebUI.getAttribute(findTestObject('Object Repository/Checkout_Page/txt_Email'), 'value')
 String displayedPhone = WebUI.getAttribute(findTestObject('Object Repository/Checkout_Page/txt_Phone'), 'value')
 String displayedAddress = WebUI.getAttribute(findTestObject('Object Repository/Checkout_Page/txt_Address'), 'value')
 
-// Step 6: Compare session data with the displayed data on the checkout page
 WebUI.verifyMatch(displayedUsername, sessionUsername, false, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyMatch(displayedEmail, sessionEmail, false, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyMatch(displayedPhone, sessionPhone, false, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.verifyMatch(displayedAddress, sessionAddress, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-// Step 7: Close browser after the verification
-WebUI.closeBrowser()
