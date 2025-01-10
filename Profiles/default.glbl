@@ -19,4 +19,24 @@
       <initValue>'http://127.0.0.1:8000/get-detail/1'</initValue>
       <name>URL_ADDPRODUCT</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Name 1'</initValue>
+      <name>UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'example123@gmail.com'</initValue>
+      <name>Email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0123456789'</initValue>
+      <name>Phone</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Son Tra - Da Nang'</initValue>
+      <name>Address</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

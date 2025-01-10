@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002_VerifyProductInfor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5fc96103-62c2-418b-bfc0-0c7e3c11dfa4</testCaseGuid>
+</TestCaseEntity>
