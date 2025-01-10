@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_DetailProduct</name>
+   <name>span_AddressErrorMessage</name>
    <tag></tag>
-   <elementGuidId>a3338cbc-22ec-4a5d-977d-98038a54ea6a</elementGuidId>
+   <elementGuidId>710718c4-17e9-4344-9a5d-3fcdd1e96704</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@href=&quot;http://127.0.0.1:8000/get-detail/2&quot;]</value>
+         <value>//span[normalize-space()='The username field is required.']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

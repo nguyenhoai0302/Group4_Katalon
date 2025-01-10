@@ -25,10 +25,10 @@ WebUI.openBrowser(GlobalVariable.REGISTER_URL)
 // verify current page is register page
 WebUI.verifyEqual(WebUI.getText(findTestObject('Object Repository/Register_Page/lbl_RegisterTitle')), 'Register')
 
-WebUI.setText(findTestObject('Object Repository/Register_Page/txt_Name') , "Name 1")
-WebUI.setText(findTestObject('Object Repository/Register_Page/txt_Email'), "example123@gmail.com")
-WebUI.setText( findTestObject('Object Repository/Register_Page/txt_Phone'), "0993456778")
-WebUI.setText(findTestObject('Object Repository/Register_Page/txa_Address') , "Son Tra - Da Nang")
+WebUI.setText(findTestObject('Object Repository/Register_Page/txt_Name') , GlobalVariable.UserName)
+WebUI.setText(findTestObject('Object Repository/Register_Page/txt_Email'), GlobalVariable.Email)
+WebUI.setText( findTestObject('Object Repository/Register_Page/txt_Phone'),GlobalVariable.Phone)
+WebUI.setText(findTestObject('Object Repository/Register_Page/txa_Address') , GlobalVariable.Address)
 WebUI.setEncryptedText(findTestObject('Object Repository/Register_Page/txt_Password') , "9pLpHanxPWU/nR1wMcS9Kw==")
 WebUI.setEncryptedText(findTestObject('Object Repository/Register_Page/txt_ConformPassword'), "9pLpHanxPWU/nR1wMcS9Kw==")
 

@@ -17,23 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Call test case LoginTest trong PurchaseTest'
-WebUI.callTestCase(findTestCase('Test Cases/Login/TC001_LoginSuccessfullyWithValidAccount'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
+WebUI.navigateToUrl('http://127.0.0.1:8000/login')
 
-WebUI.scrollToElement(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'), 10)
-WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'))
+WebUI.setText(findTestObject('Object Repository/Login_Page/txt_Email'), 'van123@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Login_Page/txt_Password'), '12345')
+WebUI.click(findTestObject('Object Repository/Login_Page/btn_SignIn'))
 
-'Click on the product "Super Serum Skin Tint SPF 40 Skincare Foundation'
-//WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/lnk_DetailProduct'))
+WebUI.navigateToUrl('http://127.0.0.1:8000/checkout')
 
-'Verify that the message "Super Serum Skin Tint SPF 40 Skincare Foundation" text is displayed'
-WebUI.verifyTextPresent('Super Serum Skin Tint SPF 40 Skincare Foundation', false)
 
-'Click "Add to cart" button'
-WebUI.click(findTestObject('Object Repository/ShoppingCart_Page/btn_AddToCart'))
+// Step 1: Find Username field
+WebUI.clearText(findTestObject('Object Repository/Checkout_Page/txt_Email'))
 
-'Verify the message "The product has been added to cart." is displayed'
-WebUI.verifyTextPresent('The product has been added to cart.', false)
+// Step 2: Click "Place Order" button
+WebUI.click(findTestObject('Object Repository/Checkout_Page/btn_PlaceOrder'))
 
-'Close browser'
-WebUI.closeBrowser()
+// Step 3: Verify error message
+WebUI.verifyElementVisible(findTestObject('Object Repository/Checkout_Page/span_EmailErrorMessage'))

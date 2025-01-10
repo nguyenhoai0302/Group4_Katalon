@@ -21,10 +21,10 @@ import org.openqa.selenium.Keys as Keys
 WebUI.openBrowser(GlobalVariable.URL_LOGIN)
 
 // step 2: Set "example@gmail.com" to the Email text box
-WebUI.setText(findTestObject('Object Repository/Login_page/txt_Email') , 'example@gmail.com', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/Login_page/txt_Email') , GlobalVariable.Email, FailureHandling.CONTINUE_ON_FAILURE)
 
 // step 3: Set "Name123!@#" to the Password text box
-WebUI.setText(findTestObject('Object Repository/Login_page/txt_Password') , 'Name123!@#', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_page/txt_Password') , '9pLpHanxPWU/nR1wMcS9Kw==', FailureHandling.CONTINUE_ON_FAILURE)
 
 // step 4: Click to "Sign in"
 WebUI.click( findTestObject('Object Repository/Login_page/btn_SignIn'), FailureHandling.CONTINUE_ON_FAILURE)
