@@ -47,18 +47,17 @@ for (int row = 1; row <= findTestData('LoginData/LoginData').getRowNumbers(); ro
 		WebUI.click(findTestObject('Object Repository/Login_page/btn_OK'), FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.click(findTestObject('Object Repository/Login_page/mnu_Toggle'), FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.click(findTestObject('Object Repository/Login_page/btn_LogOut'), FailureHandling.CONTINUE_ON_FAILURE)
+		// Return to log in page
+		WebUI.navigateToUrl(GlobalVariable.URL_LOGIN)
 	} else {
-		if (expectedResult != null && !expectedResult.isEmpty()) {
-			WebUI.verifyElementText(findTestObject('Object Repository/Login_page/lbl_EmailMessageRequired'), expectedErrorEmail, FailureHandling.STOP_ON_FAILURE)
+		if (expectedErrorEmail != null && !expectedErrorEmail.isEmpty()) {
+			WebUI.verifyElementText(findTestObject('Object Repository/Login_page/lbl_EmailErrorMessage'), expectedErrorEmail, FailureHandling.CONTINUE_ON_FAILURE)
 		}
 		if (expectedErrorPassword != null && !expectedErrorPassword.isEmpty())  {
 			println(row + expectedErrorPassword )
-			WebUI.verifyElementText(findTestObject('Object Repository/Login_page/lbl_PasswordMesssageRequired'), expectedErrorPassword, FailureHandling.STOP_ON_FAILURE)
+			WebUI.verifyElementText(findTestObject('Object Repository/Login_page/lbl_PasswordErrorMessage') , expectedErrorPassword, FailureHandling.CONTINUE_ON_FAILURE)
 		}
 	}
-
-	// Return to log in page
-	WebUI.navigateToUrl(GlobalVariable.URL_LOGIN)
 }
 
 // Step 3: Close the browser
