@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002_VerifyCannot AccessAuthenticationRequiredAfterLogout</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>26009126-e5a4-45c1-be9e-7369f6bbd23a</testCaseGuid>
+</TestCaseEntity>
